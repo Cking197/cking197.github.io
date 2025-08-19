@@ -1,20 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caro Countdown</title>
   <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
   <style>
+    /* 
+    If you are one of Carolyn's friends, congrats on the clever idea, but quit snooping. 
+    I probably won't even actually upload the real assets until close to release anyway, so just play along okay?
+    -The Best King Sibling
+    */
     body {
-  background-image: url('assets/background.png');
+      background-image: url('assets/background.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-color: #c5593c;
       position: relative;
     }
+
     .center-wrapper {
       min-height: 100vh;
       display: flex;
@@ -22,11 +28,13 @@
       justify-content: center;
       align-items: center;
     }
-    .countdown, .expires {
+
+    .countdown,
+    .expires {
       font-family: 'League Gothic', Arial, sans-serif;
       color: #9aceb3;
       font-weight: 400;
-      text-shadow: 2.5px 1.5px 0 #fefef9, 2px 2px 6px rgba(0,0,0,0.6);
+      text-shadow: 2.5px 1.5px 0 #fefef9, 2px 2px 6px rgba(0, 0, 0, 0.6);
       -webkit-text-stroke: 2px #9aceb3;
       filter: drop-shadow(1.5px 1px 0 #fefef9);
       text-transform: uppercase;
@@ -34,6 +42,7 @@
       letter-spacing: 0.15em;
       line-height: 1.5;
     }
+
     .countdown {
       font-size: 8rem;
       letter-spacing: 0.12em;
@@ -44,6 +53,7 @@
       padding-bottom: 0.1em;
       text-align: center;
     }
+
     .expires {
       font-size: 2.2rem;
       margin-top: 18px;
@@ -52,51 +62,66 @@
       line-height: 1.2;
       color: #9aceb3;
       font-weight: 300;
-      text-shadow: 2px 2px 0 #fefef9, 2px 2px 6px rgba(0,0,0,0.6);
+      text-shadow: 2px 2px 0 #fefef9, 2px 2px 6px rgba(0, 0, 0, 0.6);
       word-break: break-word;
       white-space: normal;
     }
+
     /* Responsive styles for mobile devices */
     @media (max-width: 600px) {
       .countdown {
-    font-size: 3.2rem;
-    letter-spacing: 0.08em;
-    line-height: 1.15;
-    padding-top: 0.04em;
-    padding-bottom: 0.04em;
+        font-size: 3.2rem;
+        letter-spacing: 0.08em;
+        line-height: 1.15;
+        padding-top: 0.04em;
+        padding-bottom: 0.04em;
       }
+
       .expires {
-    font-size: 1.1rem;
-    line-height: 1.2;
-    letter-spacing: 0.08em;
-    margin-top: 10px;
+        font-size: 1.1rem;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        margin-top: 10px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="center-wrapper" id="center-wrapper">
     <div class="countdown">00:00:00</div>
     <div class="expires">EXPIRES OCTOBER 3 AT 12:00AM PACIFIC TIME</div>
   </div>
   <script>
-  // Set the target date and time (October 3, 2025, 12:00AM PDT)
-  const targetDate = new Date('2025-10-03T00:00:00-07:00'); // PST is UTC-7 in October
+    // Set the target date and time (October 3, 2025, 12:00AM PDT)
+    const targetDate = new Date('2025-10-03T00:00:00-07:00'); // PST is UTC-7 in October
+    // Uncomment the line below for a 5-second countdown (for testing):
+    //const targetDate = new Date(Date.now() + 5000); // 5 seconds from now for testing
+    
+    // Update this variable with your announcement link
+    const announcementLink = "placeholder"; //fill with real link closer to release
     function updateCountdown() {
       const now = new Date();
       let diff = targetDate - now;
       if (diff <= 0) {
-        // Timer reached zero, show image
-        document.getElementById('center-wrapper').innerHTML = '<img src="assets/announcement.png" alt="Expired" style="max-width:80vw;max-height:80vh;">';
-        clearInterval(window.countdownInterval);
+        // Timer reached zero, check if release updates are here. if not, reload
+
+        if (announcementLink === "placeholder") { //if the site is not up to date, reload before trigger
+          location.reload();
+        } else {
+          document.getElementById('center-wrapper').innerHTML =
+            '<img src="assets/announcement.png" alt="Expired" style="max-width:80vw;max-height:80vh;"><br>' +
+            '<a href="' + announcementLink + '" target="_blank" style="font-size:2rem;color:#9aceb3;text-shadow:2px 2px 0 #fefef9,2px 2px 6px rgba(0,0,0,0.6);font-family:League Gothic,Arial,sans-serif;text-transform:uppercase;">' + announcementLink + '</a>';
+          clearInterval(window.countdownInterval);
+        }
         return;
       }
       const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
       const minutes = String(Math.floor((diff / (1000 * 60)) % 60)).padStart(2, '0');
       const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
       let display = `${hours}:${minutes}:${seconds}`;
-  // Replace any '13' with a purple span, only changing the color
-  display = display.replace(/13/g, '<span style="color:purple;">13</span>');
+      // Replace any '13' with a purple span, only changing the color
+      display = display.replace(/13/g, '<span style="color:purple;">13</span>');
       document.querySelectorAll('.countdown').forEach(el => {
         el.innerHTML = display;
       });
@@ -105,4 +130,5 @@
     updateCountdown();
   </script>
 </body>
+
 </html>

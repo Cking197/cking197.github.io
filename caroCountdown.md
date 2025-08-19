@@ -36,20 +36,18 @@ body {
 
 <div class="center-wrapper" id="center-wrapper">
   <div class="countdown">00:00:00</div>
-  <div class="expires">Expires October 3<br>at 12:00AM PST</div>
+  <div class="expires">Expires October 3<br>at 12:00AM Pacific Time</div>
 </div>
 
 <script>
-// Set the target date and time (October 3, 2025, 12:00AM PST)
-//const targetDate = new Date('2025-10-03T00:00:00-07:00'); // PST is UTC-7 in October
-// Set the target date and time (August 19, 2025, 1:30PM Eastern Time)
-const targetDate = new Date('2025-08-19T13:30:00-04:00'); // EDT is UTC-4
+// Set the target date and time (October 3, 2025, 12:00AM PDT)
+const targetDate = new Date('2025-10-03T00:00:00-07:00'); // PST is UTC-7 in October
 function updateCountdown() {
   const now = new Date();
   let diff = targetDate - now;
   if (diff <= 0) {
     // Timer reached zero, show image
-    document.getElementById('center-wrapper').innerHTML = '<img src="/assets/your_image.png" alt="Expired" style="max-width:80vw;max-height:80vh;">';
+    document.getElementById('center-wrapper').innerHTML = '<img src="/assets/announcement.png" alt="Expired" style="max-width:80vw;max-height:80vh;">';
     clearInterval(window.countdownInterval);
     return;
   }

@@ -44,7 +44,6 @@ body {
 //const targetDate = new Date('2025-10-03T00:00:00-07:00'); // PST is UTC-7 in October
 // Set the target date and time (August 19, 2025, 1:30PM Eastern Time)
 const targetDate = new Date('2025-08-19T13:30:00-04:00'); // EDT is UTC-4
-const targetDate = new Date('2025-08-19T00:00:00-07:00'); // PST is UTC-7 in October
 function updateCountdown() {
   const now = new Date();
   let diff = targetDate - now;

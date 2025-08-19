@@ -10,11 +10,14 @@ body {
   background-attachment: fixed;
   background-color: #5c4c6c;
   min-height: 100vh;
+  margin: 0;
+}
+.center-wrapper {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 0;
 }
 .countdown, .expires {
   font-family: 'Bebas Neue', sans-serif;
@@ -34,8 +37,10 @@ body {
 }
 </style>
 
-<div class="countdown">00:00:00</div>
-<div class="expires">Expires October 3<br>at 12:00AM PST</div>
+<div class="center-wrapper">
+  <div class="countdown">00:00:00</div>
+  <div class="expires">Expires October 3<br>at 12:00AM PST</div>
+</div>
 
 <script>
 // Set the target date and time (October 3, 2025, 12:00AM PST)

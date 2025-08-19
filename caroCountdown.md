@@ -1,7 +1,5 @@
----
-title: Car Countdown
+title: Caro Countdown
 layout: default
----
 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -36,5 +34,23 @@ body {
 }
 </style>
 
-<div class="countdown">03:19:54</div>
-<div class="expires">Expires August 18<br>at 2:00PM ET</div>
+<div class="countdown">00:00:00</div>
+<div class="expires">Expires October 3<br>at 12:00AM PST</div>
+
+<script>
+// Set the target date and time (October 3, 2025, 12:00AM PST)
+const targetDate = new Date('2025-10-03T00:00:00-07:00'); // PST is UTC-7 in October
+function updateCountdown() {
+  const now = new Date();
+  let diff = targetDate - now;
+  if (diff < 0) diff = 0;
+  const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
+  const minutes = String(Math.floor((diff / (1000 * 60)) % 60)).padStart(2, '0');
+  const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
+  document.querySelectorAll('.countdown').forEach(el => {
+    el.textContent = `${hours}:${minutes}:${seconds}`;
+  });
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>

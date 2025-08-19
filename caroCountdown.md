@@ -29,16 +29,16 @@ body {
   font-style: italic;
 }
 .countdown {
-  font-size: 10rem;
-  letter-spacing: 6px;
-  line-height: 1.05;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  line-height: 1.1;
 }
 .expires {
-  font-size: 3rem;
-  margin-top: 48px;
+  font-size: 1.3rem;
+  margin-top: 28px;
   text-align: center;
-  letter-spacing: 6px;
-  line-height: 1.2;
+  letter-spacing: 2px;
+  line-height: 1.3;
 }
 </style>
 

@@ -9,4 +9,3 @@ This is your new GitHub Pages site. You can edit this page to add more informati
 
 ## Quick Links
  - [Test Page](test.md)
- - [Caro Countdown](caroCountdown)

@@ -1,11 +1,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
 body {
-  background-image: url('/assets/6590aa77-fb17-49ab-b17e-67c0fbf992cb.png');
+  background-image: url('/assets/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #5c4c6c;
+  background-color: #c5593c;
   min-height: 100vh;
   margin: 0;
 }
@@ -18,25 +18,33 @@ body {
 }
 .countdown, .expires {
   font-family: 'Bebas Neue', sans-serif;
-  color: #d4d783;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    color: #9aceb3;
+    font-weight: bold;
+    text-shadow: 2.5px 1.5px 0 #fefef9, 2px 2px 6px rgba(0,0,0,0.6);
+    -webkit-text-stroke: 2px #9aceb3;
+    text-stroke: 2px #9aceb3; /* For future compatibility */
+    /* Even thinner white outline using filter for browsers that support it */
+    filter: drop-shadow(1.5px 1px 0 #fefef9);
   text-transform: uppercase;
   font-style: italic;
 }
 .countdown {
-  font-size: 4rem;
-  letter-spacing: 2px;
+  font-size: 10rem;
+  letter-spacing: 6px;
+  line-height: 1.05;
 }
 .expires {
-  font-size: 1.8rem;
-  margin-top: 10px;
+  font-size: 3rem;
+  margin-top: 48px;
   text-align: center;
+  letter-spacing: 6px;
+  line-height: 1.2;
 }
 </style>
 
 <div class="center-wrapper" id="center-wrapper">
   <div class="countdown">00:00:00</div>
-  <div class="expires">Expires October 3<br>at 12:00AM Pacific Time</div>
+  <div class="expires">EXPIRES OCTOBER 3 AT 12:00AM PACIFIC TIME</div>
 </div>
 
 <script>
@@ -55,8 +63,8 @@ function updateCountdown() {
   const minutes = String(Math.floor((diff / (1000 * 60)) % 60)).padStart(2, '0');
   const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
   let display = `${hours}:${minutes}:${seconds}`;
-  // Replace any '13' with red span
-  display = display.replace(/13/g, '<span style="color:red">13</span>');
+  // Replace any '13' with a purple span, only affecting the main color
+  display = display.replace(/13/g, '<span style="color:purple; font-weight:bold;">13</span>');
   document.querySelectorAll('.countdown').forEach(el => {
     el.innerHTML = display;
   });

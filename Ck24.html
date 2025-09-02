@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caro Countdown</title>
+  <title>CK24</title>
   <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
   <style>
     /* 
-    If you are one of Carolyn's friends, congrats on the clever idea, but quit snooping. 
-    I probably won't even actually upload the real assets until close to release anyway, so just play along okay?
+    If you are one of Carolyn's friends, 
+    congrats on the clever idea, but quit snooping. 
+
+    It's too much effort to hide things well,
+    so play along and be nice, and at least keep things to yourself.
     -The Best King Sibling
     */
     body {
@@ -90,16 +93,17 @@
 <body>
   <div class="center-wrapper" id="center-wrapper">
     <div class="countdown">00:00:00</div>
-    <div class="expires">EXPIRES OCTOBER 3 AT 12:00AM PACIFIC TIME</div>
+    <div class="expires">EXPIRES SEPTEMBER 4 AT 9:00PM PACIFIC TIME</div>
   </div>
   <script>
     // Set the target date and time (October 3, 2025, 12:00AM PDT)
-    const targetDate = new Date('2025-10-03T00:00:00-07:00'); // PST is UTC-7 in October
+    // Set the target date and time (This Thursday, 6:00PM PT)
+    // const targetDate = new Date('2025-09-04T18:00:00-07:00'); // PT is UTC-7 in September
     // Uncomment the line below for a 5-second countdown (for testing):
-    //const targetDate = new Date(Date.now() + 5000); // 5 seconds from now for testing
+    const targetDate = new Date(Date.now() + 5000); // 5 seconds from now for testing
     
     // Update this variable with your announcement link
-    const announcementLink = "placeholder"; //fill with real link closer to release
+    const announcementLink = "https://partiful.com/e/399juPUqfycm9JEeDhft"; //fill with real link closer to release
     function updateCountdown() {
       const now = new Date();
       let diff = targetDate - now;

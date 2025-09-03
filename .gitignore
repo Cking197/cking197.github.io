@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jekyll build output (if using Jekyll)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+
+# Ignore asset source files if you only want built images
+# (uncomment if you use a build process)
+# assets/src/
+
+

@@ -1,8 +1,4 @@
 
----
-title: "Connor King"
-layout: default
----
 <link rel="stylesheet" href="/css/profile.css">
 
 <div style="max-width:900px;margin:18px auto;padding:0 18px">

@@ -11,13 +11,17 @@
 		<div class="meta">
 			<h1>Connor King</h1>
 			<p>Student at Northwestern — Computer Science</p>
-			<p class="muted">Passionate about algorithms, machine learning, and building full-stack projects.</p>
+			<p class="muted">Passionate about algorithms, machine learning, game and building full-stack projects.</p>
 			<div style="margin-top:8px">
 				<span class="pill">Python</span>
 				<span class="pill">C / C++</span>
 				<span class="pill">Java</span>
-				<span class="pill">JavaScript</span>
+				<span class="pill">JavaScript / TypeScript</span>
 				<span class="pill">MATLAB</span>
+				<span class="pill">C#</span>
+				<span class="pill">React</span>
+				<span class="pill">Unity</span>
+				<span class="pill">Git / GitHub</span>
 			</div>
 		</div>
 	</div>
@@ -34,6 +38,9 @@
 				<a href="https://github.com/Cking197/VideObit">VideObit</a>
 				<a href="https://github.com/Cking197/COMP_SCI-349-FinalProject">Machine Learning Final Project</a>
 				<a href="https://github.com/hransom528/ECE452-SoftEng-Project">Software Engineering Project</a>
+				<a href="https://github.com/392-f25/LaundryQueue">WasherWatch (COMP_SCI-392)</a>
+				<a href="https://github.com/392-f25/SteamMates">SteamMates (COMP_SCI-392)</a>
+				<a href="https://github.com/392-f25/FlushRush">FlushRush (COMP_SCI-392)</a>
 			</div>
 		</div>
 
@@ -42,6 +49,8 @@
 			<ul>
 				<li><a href="https://github.com/Cking197/Comp_SCI-336">COMP_SCI-336 Design and Analysis of Algorithms (Northwestern)</a></li>
 				<li><a href="https://github.com/Cking197/COMP_SCI-349-Homework">COMP_SCI-349 Machine Learning (Northwestern)</a></li>
+				<li><a href="https://github.com/Cking197/Comp_Sci-376-Assignments">COMP_SCI-376 Computer Game Design and Development</a></li>
+				<li><a href="https://github.com/Cking197/Comp_Sci-396-Assignments">COMP_SCI-396 Special Topics in Computer Science: Declarative Programming for Game AI (Northwestern)</a></li>
 				<li><a href="https://github.com/Cking197/CE-452-HW">CE-452 Software Engineering (Rutgers)</a></li>
 				<li><a href="https://github.com/Cking197/COMP_SCI-213-HW">COMP_SCI-213 Introduction to Computer Systems (Northwestern)</a></li>
 				<li><a href="https://github.com/Cking197/COMP_SCI-211-Work">COMP_SCI-211 Fundamentals of Computer Science II (Northwestern)</a></li>

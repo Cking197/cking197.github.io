@@ -30,6 +30,13 @@
 		<p>Hi, I'm Connor. I'm studying Computer Science at Northwestern University. I enjoy designing algorithms, applying machine learning to real problems, making games, and collaborating on software engineering projects.</p>
 	</div>
 
+	<div class="section">
+		<h3>Games</h3>
+		<div class="projects">
+			<a href="/assets/TankGame/">TankGame</a>
+		</div>
+	</div>
+
 	<div class="section grid">
 		<div>
 			<h3>Projects</h3>

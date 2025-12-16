@@ -8,19 +8,50 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <div style="text-align:center;padding:20px 0">
+      <div id="unity-container" class="unity-desktop" style="position:relative;display:inline-block;left:auto;top:auto;transform:none">
+        <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-warning"> </div>
+        <div id="unity-footer">
+          <div id="unity-logo-title-footer"></div>
+          <div id="unity-fullscreen-button"></div>
+          <div id="unity-build-title">E6-Freestyle2</div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-logo-title-footer"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">E6-Freestyle2</div>
+    </div>
+
+    <div style="max-width:960px;margin:20px auto;padding:0 18px">
+      <div style="margin-top:30px">
+        <h2>Instructions</h2>
+        <iframe src="INSTRUCTIONS.pdf" style="width:100%;height:600px;border:1px solid #ccc;" allowfullscreen></iframe>
+      </div>
+
+      <div style="margin-top:30px">
+        <h2>Credits</h2>
+        <p>
+          <strong>Tank Sprites:</strong><br>
+          <a href="https://opengameart.org/content/top-down-vehicle">OpenGameArt - Top Down Vehicle</a>
+        </p>
+        <p>
+          <strong>Bullet Sprite:</strong><br>
+          <a href="https://opengameart.org/content/top-down-vehicle">OpenGameArt - Top Down Vehicle</a>
+        </p>
+        <p>
+          <strong>Sound Effects:</strong><br>
+          <a href="https://pixabay.com/sound-effects/medium-explosion-40472/">Pixabay - Medium Explosion</a><br>
+          <a href="https://pixabay.com/sound-effects/pistol-shot-233473/">Pixabay - Pistol Shot</a>
+        </p>
+      </div>
+
+      <div style="margin-top:30px">
+        <h2>Devlog</h2>
+        <iframe src="DEVLOG..pdf" style="width:100%;height:600px;border:1px solid #ccc;" allowfullscreen></iframe>
       </div>
     </div>
     <script>

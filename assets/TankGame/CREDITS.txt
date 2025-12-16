@@ -1,0 +1,9 @@
+Tank Sprites:
+https://opengameart.org/content/top-down-vehicle 
+
+Bullet Sprite:
+https://opengameart.org/content/top-down-vehicle 
+
+sound effects:
+https://pixabay.com/sound-effects/medium-explosion-40472/
+https://pixabay.com/sound-effects/pistol-shot-233473/

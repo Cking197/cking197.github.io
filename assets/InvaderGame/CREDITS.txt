@@ -1,0 +1,10 @@
+Space Invaders Sprites:
+https://opengameart.org/content/assets-for-a-space-invader-like-game 
+
+
+Sound Effects:
+Lasers:
+https://pixabay.com/sound-effects/laser-45816/
+
+Explosions:
+https://pixabay.com/sound-effects/explosion-8-bit-8-314694/

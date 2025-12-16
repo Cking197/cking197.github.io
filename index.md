@@ -11,7 +11,6 @@
 		<div class="meta">
 			<h1>Connor King</h1>
 			<p>Student at Northwestern — Computer Science</p>
-			<p class="muted">Passionate about algorithms, machine learning, game and building full-stack projects.</p>
 			<div style="margin-top:8px">
 				<span class="pill">Python</span>
 				<span class="pill">C / C++</span>
@@ -28,7 +27,7 @@
 
 	<div class="section">
 		<h3>About</h3>
-		<p>Hi, I'm Connor. I'm studying Computer Science at Northwestern University. I enjoy designing algorithms, applying machine learning to real problems, and collaborating on software engineering projects.</p>
+		<p>Hi, I'm Connor. I'm studying Computer Science at Northwestern University. I enjoy designing algorithms, applying machine learning to real problems, making games, and collaborating on software engineering projects.</p>
 	</div>
 
 	<div class="section grid">

@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/css/profile.css">
 
 <div style="max-width:900px;margin:18px auto;padding:0 18px">
-	<p style="text-align:right;margin:12px 0"><a class="pill" href="/assets/Connor King Fall 2025 Resume.pdf" download>Download Resume (PDF)</a></p>
+	<p style="text-align:right;margin:12px 0"><a class="pill" href="/assets/Connor King Winter 2026 Resume.pdf" download>Download Resume (PDF)</a></p>
 </div>
 
 <div class="profile-card">
